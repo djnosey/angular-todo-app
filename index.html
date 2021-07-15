@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todoApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="lib/angular.js"></script>
+    <script src="app/app.js"></script>
+    <script src="lib/angularRoute.js"></script>
+    <script src="partials/navbar/navbar.js"></script>
+    <script src="partials/navbar/todo/todo.js"></script>
+    <script src="partials/navbar/todo/todoForm.js"></script>
+  </head>
+  <body>
+    <navbar></navbar>
+    <todo-component></todo-component>
+
+    <div ng-view></div>
+  </body>
+</html>

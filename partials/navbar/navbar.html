@@ -1,0 +1,14 @@
+<h1>Steve's Hello, World! ToDo App</h1>
+<h3>random user component</h3>
+<button ng-click="order = 'name.first'">order by firstname</button>
+<button ng-click="order = 'name.last'">order by last name</button>
+<br />
+<br />
+enter a users age <input ng-model="ageInput" type="number" name="age" /> and
+find +/- of 5 years
+<button ng-click="$ctrl.getresults(ageInput)">get results</button>
+<ul>
+  <li class="content-card" ng-repeat="user in $ctrl.users | orderBy: order">
+    {{user.name.title}} {{user.name.first}} {{user.name.last}} {{user.dob.age}}
+  </li>
+</ul>
